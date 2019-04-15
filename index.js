@@ -92,8 +92,8 @@ function init(appkit) {
 module.exports = {
   init:init,
   update:update,
-  group:'mypluginname',
-  help:'manage mypluginname (create, list)',
+  group:'multiscale',
+  help:'scale with all, except, only',
   primary:true
 };
 
