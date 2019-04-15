@@ -85,8 +85,8 @@ function update() {
 function init(appkit) {
   appkit.args
     .command('multiscale:only TYPES', 'scale some dyno types.  TYPES is a comma delimited list', multiscale_opts, only.bind(null, appkit))
-    .command('multiscale:except TYPES', 'scale dyno type except.  TYPES is a comman delimited list', multiscale_opts, except.bind(null, appkit))
-    .command('multiscale:all', 'scale all dyno types', multiscale_opts, all.bind(null, appkit))
+    .command('multiscale:except TYPES', 'scale all dyno types except.  TYPES is a comman delimited list', multiscale_opts, except.bind(null, appkit))
+    .command('multiscale:all', 'scale all dyno types.', multiscale_opts, all.bind(null, appkit))
 }
 
 module.exports = {
