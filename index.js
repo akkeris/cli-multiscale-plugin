@@ -39,7 +39,7 @@ function except(appkit, args) {
   for(let j=0; j < filteredArray.length; j++) {
      payload.push({type:filteredArray[j], quantity:args.quantity})
    }
-  let task = appkit.terminal.task(`Scaling **⬢ ${args.app}** ${existing} processes`);
+  let task = appkit.terminal.task(`Scaling **⬢ ${args.app}** ${filteredArray} processes`);
   task.start();
     appkit.api.patch(JSON.stringify(payload), `/apps/${args.app}/formation`, (err, data) => {
       if(err) {
